@@ -9,6 +9,9 @@ if sys.argv[2] == 'post':
 if sys.argv[2] == 'get':
 	res = rq.get(sys.argv[1])
 
+if sys.argv[2] == 'put':
+    res = rq.put(sys.argv[1])
+
 ######################################################
 
 if sys.argv[3] == "--help":
@@ -17,6 +20,7 @@ if sys.argv[3] == "--help":
             [Methods]
             \t get\n
             \t post\n
+            \t put\n
             [outputs]
             \t--normal\n
             \t--status\n
