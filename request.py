@@ -15,6 +15,10 @@ if sys.argv[2] == 'put':
 if sys.argv[2] == 'delete':
     res = rq.delete(sys.argv[1])
 
+if sys.argv[2] == 'patch':
+    res = rq.patch(sys.argv[1])
+
+
 ######################################################
 
 if sys.argv[3] == "--help":
@@ -24,6 +28,7 @@ if sys.argv[3] == "--help":
             \t get\n
             \t post\n
             \t put\n
+            \t patch\n
             \t delete\n
             [outputs]
             \t--normal\n
